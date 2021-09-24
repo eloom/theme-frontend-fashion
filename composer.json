@@ -1,0 +1,40 @@
+{
+  "name": "eloom/theme-frontend-gaia",
+  "description": "Tema Gaia para Magento",
+  "homepage": "https://eloom.tech/themes/gaia",
+  "keywords": [
+    "magento",
+    "magento2",
+    "commerce",
+    "ecommerce",
+    "e-commerce",
+    "shop",
+    "eloom",
+    "themes"
+  ],
+  "authors": [
+    {
+      "name": "eloom",
+      "email": "contato@eloom.com.br"
+    }
+  ],
+  "support": {
+    "email": "contato@eloom.com.br"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable" : true,
+  "require": {
+    "php": "~7.3|~7.4",
+    "magento/framework": "103.0.*",
+    "eloom/theme-frontend": "dev-main"
+  },
+  "license": [
+    "OSL-3.0",
+    "AFL-3.0"
+  ],
+  "autoload": {
+    "files": [
+      "src/theme-frontend-gaia/registration.php"
+    ]
+  }
+}
