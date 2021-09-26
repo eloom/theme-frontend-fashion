@@ -11,7 +11,7 @@
 @navigation-level0-item__font-weight: @font-weight__regular;
 @navigation-level0-item__color: @color-white;
 @navigation-level0-item__hover__color: @color-white;
-
+@navigation-level0-item__border: 0;
 @submenu-item__color: @color-white;
 @submenu-item__hover__color: @color-white;
 
@@ -61,6 +61,10 @@
 				@_icon-font-color-hover: @header-icons-color-hover
 		);
 		.lib-icon-text-hide();
+		&:before {
+			-webkit-font-smoothing: unset;
+			-moz-osx-font-smoothing: unset;
+		}
 		cursor: pointer;
 		display: block;
 		font-size: 0;
@@ -77,6 +81,10 @@
 .media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
 	.navigation {
 		padding: 0;
+
+		a {
+			color: unset !important;
+		}
 
 		.parent {
 			.level-top {
@@ -187,10 +195,9 @@
 				margin: 0;
 
 				&.greet.welcome {
-					border-top: 1px solid @color-gray82;
+					//border-top: 1px solid @color-gray82;
 					font-weight: @font-weight__regular;
 					padding: .8rem @submenu__padding-left;
-					color: @color-white;
 				}
 
 				> a {
@@ -200,7 +207,7 @@
 
 			a,
 			a:hover {
-				.lib-css(color, @color-white);
+				//.lib-css(color, @color-white);
 				.lib-css(text-decoration, @navigation-level0-item__text-decoration);
 				display: block;
 				font-weight: @font-weight__regular;
@@ -250,7 +257,7 @@
 
 		.nav-toggle {
 			&:after {
-				background: rgba(0, 0, 0, @overlay__opacity);
+				//background: rgba(0, 0, 0, @overlay__opacity);
 				content: '';
 				display: block;
 				height: 100%;
@@ -271,25 +278,24 @@
 
 	.nav-sections-item-title {
 		background: darken(@navigation__background, 5%);
-		border: solid darken(@navigation__background, 10%);
-		border-width: 0 0 1px 1px;
+		border-bottom: 1px solid @color-gray82;
 		box-sizing: border-box;
 		float: left;
-		height: 7rem;
 		padding-top: 2.4rem;
 		text-align: center;
-		width: 33.33%;
+		width: 45%;
+		margin-left: 1rem;
 
 		a {
-			color: @color-white;
+			//color: @color-white;
 		}
 
 		&.active {
 			background: transparent;
-			border-bottom: 0;
 
 			a {
-				color: @color-white;
+				color: @color-white !important;
+				background-color: @color-black;
 			}
 		}
 

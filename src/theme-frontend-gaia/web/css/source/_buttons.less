@@ -1,6 +1,6 @@
 //  Font style
 @button__font-size: 1.6rem;
-@button__font-weight: @font-weight__heavier;
+@button__font-weight: normal;
 @button__padding: .7rem 1.5rem;
 
 //  Display settings
@@ -28,6 +28,7 @@
 & when (@media-common = true) {
 	.action.primary {
 		.lib-button-primary();
+		letter-spacing: 1px;
 	}
 
 	button,

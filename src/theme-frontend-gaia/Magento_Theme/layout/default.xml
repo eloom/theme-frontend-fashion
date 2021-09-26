@@ -70,7 +70,7 @@
         
         <referenceBlock name="footer_links" remove="true"/>
         <referenceBlock name="report.bugs" remove="true"/>
-        
+    
         <move element="form.subscribe" destination="footer" before="footer_links"/>
         <move element="copyright" destination="footer" after="eloom.footer.links"/>
     </body>

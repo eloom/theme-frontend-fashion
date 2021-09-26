@@ -2,12 +2,23 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
 	<head>
+		<!-- Custom Favicons -->
+		<link rel="apple-touch-icon" sizes="180x180" src="icons/apple-touch-icon.png"/>
+		<link rel="icon" type="image/png" sizes="32x32" src="icons/favicon-32x32.png"/>
+		<link rel="icon" type="image/png" sizes="16x16" src="icons/favicon-16x16.png"/>
+		<link rel="mask-icon" src="icons/safari-pinned-tab.svg" color="#5bbad5"/>
+		<link rel="manifest" src="icons/site.webmanifest"/>
+		<meta name="msapplication-TileColor" content="#da532c"/>
+		<meta name="theme-color" content="#ffffff"/>
+		
+		<!-- CSS -->
 		<css src="css/owl.carousel.min.css"/>
 		<css src="css/owl.theme.default.min.css"/>
 		<css src="css/styles-m.css"/>
 		<css src="css/styles-l.css" media="screen and (min-width: 768px)"/>
 		<css src="css/print.css" media="print"/>
 		
+		<!-- Custom Metas -->
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		<meta name="format-detection" content="telephone=no"/>
 	</head>
