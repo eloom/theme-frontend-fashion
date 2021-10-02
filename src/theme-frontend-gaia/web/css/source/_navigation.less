@@ -1,11 +1,7 @@
-//
-//  Variables
-//  _____________________________________________
+//  Variables _____________________________________________
 @active-nav-indent: 4rem;
 
-//
-//  Navigation variables
-//  _____________________________________________
+//  Navigation variables _____________________________________________
 @navigation__background: transparent;
 
 @navigation-level0-item__font-weight: @font-weight__regular;
@@ -15,9 +11,7 @@
 @submenu-item__color: @color-white;
 @submenu-item__hover__color: @color-white;
 
-//
-//  Desktop navigation
-//  ---------------------------------------------
+//  Desktop navigation ---------------------------------------------
 @navigation-desktop__background: var(--navigation-desktop-bg-color);
 @navigation-desktop-level0-item__line-height: 4rem;
 @navigation-desktop-level0-item__color: @color-white;
@@ -26,10 +20,7 @@
 @submenu-desktop-item__color: @color-black;
 @submenu-desktop-item__hover__color: @color-black;
 
-//
-//  Common
-//  _____________________________________________
-
+//  Common _____________________________________________
 & when (@media-common = true) {
 	.navigation {
 		text-transform: uppercase;
@@ -74,10 +65,7 @@
 	}
 }
 
-//
-//  Mobile
-//  _____________________________________________
-
+//  Mobile _____________________________________________
 .media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
 	.navigation {
 		padding: 0;

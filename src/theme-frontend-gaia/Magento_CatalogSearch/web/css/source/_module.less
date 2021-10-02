@@ -1,7 +1,4 @@
-//
-//  Variables
-//  _____________________________________________
-
+//  Variables _____________________________________________
 @autocomplete__background-color: @color-white;
 @autocomplete__border: 1px solid @form-element-input__border-color;
 @autocomplete-item__border: 1px solid @color-gray90;
@@ -194,13 +191,9 @@
     }
 }
 
-//
-//  Mobile
-//  _____________________________________________
+//  Mobile _____________________________________________
 .media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
     .block-search {
-        //margin-top: @indent__s;
-
         .block-content {
             margin-bottom: 0;
         }
@@ -217,9 +210,7 @@
 
 }
 
-//
-//  Desktop
-//  _____________________________________________
+//  Desktop _____________________________________________
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
     .block-search {
         //.lib-vendor-prefix-flex-basis(20%);
