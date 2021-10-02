@@ -4,7 +4,7 @@
 
 & when (@media-common = true) {
     .order-links {
-        border-bottom: @border-width__base solid @border-color__base;
+        border-bottom: @border-width__base solid var(--border-color);
         margin-bottom: 1rem;
 
         .item {
@@ -20,7 +20,7 @@
     }
 
     .order-details-items {
-        border-bottom: @border-width__base solid @border-color__base;
+        border-bottom: @border-width__base solid var(--border-color);
         margin-bottom: 2rem;
         padding-bottom: 1rem;
 
@@ -51,7 +51,7 @@
             }
 
             tbody + tbody {
-                border-top: @border-width__base solid @border-color__base;
+                border-top: @border-width__base solid var(--border-color);
             }
         }
 
@@ -210,7 +210,7 @@
     }
 
     .order-tracking {
-        border-bottom: @border-width__base solid @border-color__base;
+        border-bottom: @border-width__base solid var(--border-color);
         margin: 0;
         padding: 2rem 0;
 

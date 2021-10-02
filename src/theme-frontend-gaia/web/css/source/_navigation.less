@@ -18,7 +18,7 @@
 //
 //  Desktop navigation
 //  ---------------------------------------------
-@navigation-desktop__background: var(--navigation-desktop-bg);
+@navigation-desktop__background: var(--navigation-desktop-bg-color);
 @navigation-desktop-level0-item__line-height: 4rem;
 @navigation-desktop-level0-item__color: @color-white;
 @navigation-desktop-level0-item__hover__color: @color-white;
@@ -278,7 +278,7 @@
 
 	.nav-sections-item-title {
 		background: darken(@navigation__background, 5%);
-		border-bottom: 1px solid @color-gray82;
+		border-bottom: 1px solid var(--border-color);
 		box-sizing: border-box;
 		float: left;
 		padding-top: 2.4rem;
@@ -286,16 +286,12 @@
 		width: 45%;
 		margin-left: 1rem;
 
-		a {
-			//color: @color-white;
-		}
-
 		&.active {
 			background: transparent;
 
 			a {
-				color: @color-white !important;
-				background-color: @color-black;
+				color: var(--navigation-mobile-sections-item-color) !important;
+				background-color: var(--navigation-mobile-sections-item-bg-color);
 			}
 		}
 
@@ -324,10 +320,7 @@
 	.lib-main-navigation();
 }
 
-//
-//  Desktop
-//  _____________________________________________
-
+//  Desktop _____________________________________________
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
 	.navigation {
 		&.wrapper {
@@ -341,7 +334,7 @@
 			justify-content: space-evenly;
 		}
 
-		.navigation li.category-item {
+		li.category-item {
 			&:first-child {
 				a.level-top {
 					padding-left: 0;
@@ -377,6 +370,14 @@
 		@_nav-font-weight: normal,
 		@_submenu-font-weight: normal
 	);
+
+	.level0 {
+		&.parent {
+			> .level-top {
+				padding: 0 2rem !important;
+			}
+		}
+	}
 
 	.panel.header {
 		.links,

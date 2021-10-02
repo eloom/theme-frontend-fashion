@@ -11,7 +11,7 @@
 & when (@media-common = true) {
 	.opc-sidebar {
 		&.opc-summary-wrapper {
-			background-color: var(--checkout-sidebar-bg);
+			background-color: var(--checkout-sidebar-bg-color);
 		}
 	}
 
@@ -67,7 +67,7 @@
 		//  Block title
 		.items-in-cart {
 			> .title {
-				border-bottom: @border-width__base solid @border-color__base;
+				border-bottom: @border-width__base solid var(--border-color);
 				.lib-css(padding, @indent__s @indent__xl @indent__s 0);
 				cursor: pointer;
 				.lib-icon-font(
@@ -168,7 +168,7 @@
 			z-index: 1;
 
 			.secondary {
-				border-top: @border-width__base solid @border-color__base;
+				border-top: @border-width__base solid var(--border-color);
 				display: block;
 				float: none;
 				margin: -1px 0 0;

@@ -40,8 +40,8 @@
         text-transform: uppercase;
 
         & > span {
-            color: var(--text-color-bg);
-            background: var(--badge-color-bg);
+            color: var(--text-bg-color);
+            background: var(--badge-bg-color);
             padding: 0 .5rem;
         }
     }
@@ -298,8 +298,8 @@
         }
 
         #eloom-shipping-estimate {
-            border-top: @border-width__base solid @border-color__base;
-            border-bottom: @border-width__base solid @border-color__base;
+            border-top: @border-width__base solid var(--border-color);
+            border-bottom: @border-width__base solid var(--border-color);
             padding: 1rem 0;
 
             [data-role='title'] {
