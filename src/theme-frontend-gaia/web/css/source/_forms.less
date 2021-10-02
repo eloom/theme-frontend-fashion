@@ -1,16 +1,11 @@
-//
-//  Variables
-//  _____________________________________________
+//  Variables _____________________________________________
 @form-field-label__font-weight: @font-weight__heavier;
 @form-field__vertical-indent__desktop: 2.9rem;
 
 @form-calendar-icon__color: @primary__color;
 @form-validation-note__font-size: 1.3rem;
 
-//
-//  Common
-//  _____________________________________________
-
+//  Common _____________________________________________
 & when (@media-common = true) {
 	input[type="text"],
 	input[type="password"],
@@ -34,7 +29,6 @@
 		}
 		> .legend {
 			text-transform: uppercase;
-			font-size: 1.5rem;
 		}
 		> .field,
 		> .fields > .field {
@@ -172,10 +166,7 @@
 		}
 	}
 
-	//
-	//  Sidebar forms
-	//  -----------------------------------------
-
+	//  Sidebar forms -----------------------------------------
 	.sidebar {
 		.fieldset {
 			margin: 0;
@@ -201,18 +192,15 @@
 	}
 }
 
-//
-//  Desktop
-//  _____________________________________________
-
+//  Desktop _____________________________________________
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
 	.fieldset {
 		.legend {
-			&:extend(.abs-margin-for-forms-desktop all);
+			//&:extend(.abs-margin-for-forms-desktop all);
 		}
 
 		> .field {
-			.lib-form-field-type-revert();
+			//.lib-form-field-type-revert();
 			margin: 0 0 @form-field__vertical-indent__desktop;
 		}
 	}

@@ -43,17 +43,14 @@
 @h1__margin-bottom__desktop: @indent__xl;
 
 //  Footer
-@footer-links-color: @color-gray60;
-@footer-links-color-hover: @color-gray60;
-@footer-links-color-current: @primary__color__light;
+@footer-links-color: var(--footer-links-color);
+@footer-links-color-hover: var(--footer-links-color-hover);
+@footer-links-color-current: var(--footer-links-color-current);
 
-@footer__background-color: @color-very-darkie-gray;
-@footer-links-separator-border-color: @color-gray-light4;
+@footer__background-color: var(--footer-color-bg);
+@footer-links-separator-border-color: var(--footer-links-separator-border-color);
 
-//
-//  Common
-//  _____________________________________________
-
+//  Common _____________________________________________
 & when (@media-common = true) {
 	#cookie-status {
 		display: none;
@@ -267,7 +264,7 @@
 							@_icon-font-line-height: 3rem,
 							@_icon-font-text-hide: true,
 							@_icon-font-display: block,
-							@_icon-font-color: @color-ssl
+							@_icon-font-color: var(--footer-color-ssl)
 					);
 				}
 			}

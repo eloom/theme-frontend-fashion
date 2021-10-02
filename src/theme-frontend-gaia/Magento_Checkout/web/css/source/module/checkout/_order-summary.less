@@ -1,13 +1,4 @@
-// /**
-//  * Copyright © Magento, Inc. All rights reserved.
-//  * See COPYING.txt for license details.
-//  */
-
-//
-//  Variables
-//  _____________________________________________
-
-@checkout-summary__background-color: @color-white-smoke;
+//  Variables _____________________________________________
 @checkout-summary__padding: 22px @indent__l;
 
 @checkout-summary-title__margin: @indent__s;
@@ -16,19 +7,16 @@
 @checkout-summary-items__max-height: 370px;
 @checkout-summary-items__padding: 15px;
 
-//
-//  Common
-//  _____________________________________________
-
+//  Common _____________________________________________
 & when (@media-common = true) {
-
-	//
-	//  Order Summary
-	//  ---------------------------------------------
+	.opc-sidebar {
+		&.opc-summary-wrapper {
+			background-color: var(--checkout-sidebar-bg);
+		}
+	}
 
 	.opc-block-summary {
 		&:extend(.abs-add-box-sizing all);
-		.lib-css(background, @checkout-summary__background-color);
 		.lib-css(padding, @checkout-summary__padding);
 		margin: 0 0 @indent__base;
 

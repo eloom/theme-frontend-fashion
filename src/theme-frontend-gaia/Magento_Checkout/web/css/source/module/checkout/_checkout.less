@@ -1,6 +1,4 @@
-//
-//  Variables
-//  _____________________________________________
+//  Variables _____________________________________________
 
 @checkout-wrapper__margin: @indent__base;
 @checkout-wrapper__columns: 7;
@@ -15,10 +13,7 @@
 @checkout-step-content-mobile__margin-s: 15px;
 @checkout-step-content-mobile__margin: 0 -(@checkout-step-content-mobile__margin-s) @checkout-step-content-mobile__margin-s;
 
-//
-//  Common
-//  _____________________________________________
-
+//  Common _____________________________________________
 & when (@media-common = true) {
 	.checkout-container {
 		&:extend(.abs-add-clearfix all);
@@ -102,7 +97,7 @@
 
 		.checkout-ssl {
 			float: right;
-			color: @color-ssl-checkout;
+			color: var(--header-color-ssl);
 
 			.ssl {
 				.lib-icon-font(
@@ -111,7 +106,7 @@
 						@_icon-font-line-height: 3.5rem,
 						@_icon-font-text-hide: true,
 						@_icon-font-display: block,
-						@_icon-font-color: @color-ssl-checkout
+						@_icon-font-color: var(--header-color-ssl)
 				);
 			}
 		}
@@ -162,6 +157,22 @@
 
 				dt {
 					padding: 1rem;
+
+					&.bank-url {
+						a {
+							border: 1px solid;
+							padding: .75rem 2rem;
+							border-radius: @button__border-radius;
+
+							.lib-icon-font(
+									@icon-next,
+									@_icon-font-size: @icon-font__size,
+									@_icon-font-line-height: unset,
+									@_icon-font-text-hide: true,
+									@_icon-font-position: after
+							);
+						}
+					}
 				}
 			}
 
@@ -177,13 +188,16 @@
 	}
 }
 
-//
-//  Mobile
-//  _____________________________________________
+//  Mobile _____________________________________________
 .media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__s) {
 	.checkout-index-index {
 		.checkout-ssl {
-			margin-right: 1.5rem;
+			.ssl {
+				&:before {
+					font-size: 2.5rem;
+					line-height: 2.5rem;
+				}
+			}
 		}
 	}
 
@@ -221,10 +235,13 @@
 	}
 }
 
-//
-//  Desktop
-//  _____________________________________________
+//  Desktop _____________________________________________
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+	.checkout-index-index {
+		.page-main {
+			width: 95%;
+		}
+	}
 	.opc-wrapper {
 		&:extend(.abs-add-box-sizing-desktop-m all);
 		.lib-layout-column(2, 1, @checkout-wrapper__columns);

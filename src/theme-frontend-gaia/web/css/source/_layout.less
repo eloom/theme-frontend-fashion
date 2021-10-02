@@ -7,20 +7,8 @@
 @layout-column-main__sidebar-offset: 2%;
 @layout-column__additional-sidebar-offset: @layout-column-main__sidebar-offset;
 
-//
-//  Common
-//  _____________________________________________
+//  Common _____________________________________________
 & when (@media-common = true) {
-	/*
-	:root {
-		--primary--color: @theme__color__primary;
-		--primary--alt--color: @color-black_dark;
-		--secondary--color: @color-black_dark;
-		--font-family-serif: @font-family__serif;
-		--font-family-sans-serif: @font-family__base;
-		--font-family-monospace: @font-family__monospace;
-	}
-	 */
 	.columns {
 		#lib-layout-columns();
 
@@ -49,9 +37,7 @@
 	}
 }
 
-//
-//  Mobile
-//  _____________________________________________
+//  Mobile _____________________________________________
 .media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
 	.navigation,
 	.breadcrumbs,
@@ -80,10 +66,7 @@
 	}
 }
 
-//
-//  Desktop
-//  _____________________________________________
-
+//  Desktop _____________________________________________
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
 	.navigation,
 	.breadcrumbs,

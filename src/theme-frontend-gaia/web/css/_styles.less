@@ -1,3 +1,42 @@
 @import 'source/lib/_lib.less'; // Global lib
 @import 'source/_sources.less'; // Theme styles
 @import 'source/_components.less'; // Components styles (modal/sliding panel)
+
+//  Common _____________________________________________
+& when (@media-common = true) {
+	:root {
+		--color-one: #B0BFBE;
+		--color-two: #F2D377;
+		--color-three: #F29544;
+		--color-four: #BF522A;
+		--color-five: #400101;
+
+		--text-color: #404040;
+		--text-color-intense: #8C8C8C;
+		--text-color-muted: #D9D9D9;
+		--text-color-bg: var(--color-one);
+
+		--theme-color-primary: var(--color-five);
+		--theme-color-primary-alt: var(--color-two);
+		--theme-color-secondary: var(--color-one);
+
+		--header-color-ssl: #70B400;
+
+		--navigation-desktop-bg: var(--color-five);
+
+		--footer-color-ssl: #4BE79C;
+		--footer-color: #4BE79C;
+		--footer-color-bg: var(--color-four);
+		--footer-links-color: @color-gray60;
+		--footer-links-color-hover: @color-gray60;
+		--footer-links-color-current: @primary__color__light;
+		--footer-links-separator-border-color: @color-gray-light4;
+
+		--badge-color-bg: var(--color-three);
+
+		--pager-color-bg: var(--color-four);
+		--pager-color-active-bg: var(--color-five);
+
+		--checkout-sidebar-bg: #F5F5F5;
+	}
+}

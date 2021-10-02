@@ -1,6 +1,4 @@
-//
-//  Variables
-//  _____________________________________________
+//  Variables _____________________________________________
 
 @account-nav-background: @sidebar__background-color;
 @account-nav-color: false;
@@ -20,11 +18,18 @@
 @_password-strong: #c5eeac;
 @_password-very-strong: #81b562;
 
-//
-//  Common
-//  _____________________________________________
-
+//  Common _____________________________________________
 & when (@media-common = true) {
+    .customer-account-create,
+    .customer-account-login,
+    .customer-account-forgotpassword {
+        .page-title-wrapper {
+            text-align: center;
+            text-transform: uppercase;
+            margin: 2rem 0 4rem;
+        }
+    }
+
     .login-container {
         .block {
             &-new-customer {
@@ -100,10 +105,7 @@
         }
     }
 
-    //
-    //  My account
-    //  ---------------------------------------------
-
+    //  My account ---------------------------------------------
     .account {
         .column.main {
             h2 {
@@ -164,10 +166,7 @@
         }
     }
 
-    //
-    //  Account navigation
-    //  ---------------------------------------------
-
+    //  Account navigation ---------------------------------------------
     .account-nav {
         .title {
             &:extend(.abs-visually-hidden all);
@@ -225,7 +224,6 @@
     //
     //  Blocks & Widgets
     //  ---------------------------------------------
-
     .block {
         &:extend(.abs-margin-for-blocks-and-widgets all);
         .column.main & {
@@ -253,10 +251,7 @@
         }
     }
 
-    //
-    //  Password Strength Meter
-    //  ---------------------------------------------
-
+    //  Password Strength Meter ---------------------------------------------
     .field.password {
         .control {
             .lib-vendor-prefix-display();
@@ -333,12 +328,27 @@
             vertical-align: middle;
         }
     }
+
+    .sales-order-view {
+        .bank-url {
+            a {
+                border: 1px solid;
+                padding: .75rem 2rem;
+                border-radius: @button__border-radius;
+
+                .lib-icon-font(
+                    @icon-next,
+                    @_icon-font-size: @icon-font__size,
+                    @_icon-font-line-height: unset,
+                    @_icon-font-text-hide: true,
+                    @_icon-font-position: after
+                );
+            }
+        }
+    }
 }
 
-//
-//  Mobile
-//  _____________________________________________
-
+//  Mobile _____________________________________________
 .media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__s) {
     .account {
         .column.main,
@@ -401,19 +411,6 @@
     .customer-account-forgotpassword {
         .page-main {
             width: 50%;
-        }
-    }
-    .customer-account-create,
-    .customer-account-login,
-    .customer-account-forgotpassword {
-        .page-title-wrapper {
-            text-align: center;
-            text-transform: uppercase;
-            margin: 2rem 0 4rem;
-
-            h1 {
-                font-weight: @font-weight__heavier;
-            }
         }
     }
 
