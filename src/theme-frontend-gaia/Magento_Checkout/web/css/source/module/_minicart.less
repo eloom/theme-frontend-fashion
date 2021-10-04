@@ -183,18 +183,18 @@
 					&:extend(.abs-visually-hidden all);
 				}
 
-                .counter.qty {
-                    .lib-css(background, @active__color);
-                    .lib-css(color, @page__background-color);
-                    .lib-css(height, @minicart-qty__height);
-                    .lib-css(width, @minicart-qty__height);
-                    .lib-css(line-height, @minicart-qty__height);
-                    border-radius: 50%;
-                    display: inline-block;
-                    overflow: hidden;
-                    text-align: center;
-                    white-space: normal;
-                    font-size: 1.2rem;
+				.counter.qty {
+					background: var(--minicart-bg-color);
+					.lib-css(color, @page__background-color);
+					.lib-css(height, @minicart-qty__height);
+					.lib-css(width, @minicart-qty__height);
+					.lib-css(line-height, @minicart-qty__height);
+					border-radius: 50%;
+					display: inline-block;
+					overflow: hidden;
+					text-align: center;
+					white-space: normal;
+					font-size: 1.2rem;
 
 					&.empty {
 						display: none;
@@ -375,12 +375,12 @@
 			&.delete {
 				.lib-icon-font(
 						@icon-n-edit,
-						@_icon-font-size: @icon-font__size,
-						@_icon-font-line-height: @icon-font__line-height,
-						@_icon-font-text-hide: true,
-						@_icon-font-color: @color-gray19,
-						@_icon-font-color-hover: @color-gray19,
-						@_icon-font-color-active: @color-gray19
+					@_icon-font-size: @icon-font__size,
+					@_icon-font-line-height: @icon-font__line-height,
+					@_icon-font-text-hide: true,
+					@_icon-font-color: @color-gray19,
+					@_icon-font-color-hover: @color-gray19,
+					@_icon-font-color-active: @color-gray19
 				);
 				margin-right: 1.5rem;
 			}

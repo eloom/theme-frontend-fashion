@@ -9,7 +9,7 @@
 		<link rel="mask-icon" src="icons/safari-pinned-tab.svg" color="#5bbad5"/>
 		<link rel="manifest" src="icons/site.webmanifest"/>
 		<meta name="msapplication-TileColor" content="#da532c"/>
-		<meta name="theme-color" content="#ffffff"/>
+		<meta name="theme-color" content="#FFF"/>
 		
 		<!-- CSS -->
 		<css src="css/owl.carousel.min.css"/>
