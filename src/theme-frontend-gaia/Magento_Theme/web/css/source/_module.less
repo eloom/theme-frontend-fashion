@@ -3,9 +3,7 @@
 @import 'module/_infinite-scroll.less';
 @import 'module/_widgets.less';
 
-//
-//  Theme variables
-//  _____________________________________________
+//  Theme variables _____________________________________________
 
 //  Messages
 @message-global-note__background: @color-yellow-light2;
@@ -370,7 +368,7 @@
 	.page-header,
 	.page-footer {
 		.widget.block {
-			.lib-css(margin, @indent__base 0);
+			.lib-css(margin, 0);
 		}
 	}
 
@@ -378,10 +376,7 @@
 		//&:extend(.abs-no-display all);
 	}
 
-	//
-	//  Calendar
-	//  ---------------------------------------------
-
+	//  Calendar ---------------------------------------------
 	.ui-datepicker {
 		td {
 			padding: 0;
@@ -593,6 +588,9 @@
 		> .widget {
 			box-sizing: border-box;
 			width: 100%;
+		}
+		> .breadcrumbs {
+			margin: 2rem 0;
 		}
 	}
 
