@@ -58,7 +58,7 @@
 		
 		<move element="header.panel" destination="header-wrapper" before="logo"/>
 		
-			<referenceContainer name="footer">
+		<referenceContainer name="footer">
 			<block class="Magento\Store\Block\Switcher"
 			       name="store_switcher"
 			       as="store_switcher"

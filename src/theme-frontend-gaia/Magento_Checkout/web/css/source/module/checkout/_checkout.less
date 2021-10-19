@@ -119,8 +119,13 @@
 			display: none;
 		}
 
-		h1.page-title {
-			display: none !important;
+		.page-title-wrapper {
+			display: inline-block;
+			width: 100%;
+
+			h1.page-title {
+				display: none !important;
+			}
 		}
 
 		.checkout-success {
@@ -158,7 +163,9 @@
 				dt {
 					padding: 1rem;
 
-					&.bank-url {
+					&.payment-link,
+					&.bank-url,
+					&.pdf {
 						a {
 							border: 1px solid;
 							padding: .75rem 2rem;
