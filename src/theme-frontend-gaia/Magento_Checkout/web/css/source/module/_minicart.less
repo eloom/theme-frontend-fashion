@@ -65,6 +65,8 @@
     .block-content {
       .extra {
         &.discount {
+          margin-bottom: 1rem;
+
           span.label {
             display: block;
             text-align: left;
@@ -74,9 +76,17 @@
             display: flex;
             margin-bottom: 0;
 
-            .field.coupon {
-              flex: 1;
-              margin: 0;
+            .field {
+              &.coupon {
+                flex: 1;
+                margin: 0;
+              }
+              &.button {
+                button.action {
+                  height: 3.2rem;
+                  border-left: 0;
+                }
+              }
             }
           }
 
@@ -84,8 +94,16 @@
             margin-top: 1rem;
             margin-bottom: 0;
 
-            td.amount {
-              padding-right: 0;
+            td {
+              &.mark {
+                padding-left: 0;
+                text-align: right;
+              }
+
+              &.amount {
+                padding-right: 0;
+                text-align: right;
+              }
             }
           }
         }
