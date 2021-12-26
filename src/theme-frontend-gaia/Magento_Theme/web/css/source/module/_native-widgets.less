@@ -1,0 +1,28 @@
+//  Common _____________________________________________
+& when (@media-common = true) {
+
+  &.product-items {
+    &.widget-product-carousel {
+      .product-item {
+        &-details {
+          text-align: center;
+        }
+
+        &-name {
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+
+  .widget.block-products-list {
+    .product-item {
+      &-info {
+        text-align: center;
+      }
+    }
+  }
+  .pagebuilder-column .widget-product-grid .product-item .product-item-actions .actions-secondary {
+    display: none;
+  }
+}
