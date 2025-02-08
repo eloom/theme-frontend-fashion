@@ -1,7 +1,7 @@
 {
-  "name": "eloom/theme-frontend-gaia",
-  "description": "Tema Gaia para Magento",
-  "homepage": "https://eloom.com.br/store/gaia",
+  "name": "eloom/theme-frontend-fashion",
+  "description": "Tema Fashion para Magento",
+  "homepage": "https://eloom.com.br/store/fashion",
   "keywords": [
     "magento",
     "magento2",
@@ -33,7 +33,7 @@
   ],
   "autoload": {
     "files": [
-      "src/theme-frontend-gaia/registration.php"
+      "src/theme-frontend-fashion/registration.php"
     ]
   }
 }
